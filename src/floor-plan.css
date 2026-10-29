@@ -1,0 +1,18 @@
+.building-plan { display:block; width:100%; height:auto; aspect-ratio:5/4; background:#f8fbf9; cursor:crosshair; }
+.heatmap-layer { opacity:.58; }
+.building-outline { fill:none; stroke:#233d4c; stroke-width:3; }
+.plan-room { stroke-width:2; }
+.plan-room.room { fill:#f5f8f9; fill-opacity:.37; stroke:#52718a; }
+.plan-room.toilet { fill:#f8eeee; fill-opacity:.45; stroke:#af6d6d; }
+.plan-room.circulation { fill:#f4ede0; fill-opacity:.48; stroke:#a89066; }
+.plan-room.open { fill:#fafaf3; fill-opacity:.4; stroke:#a7a79d; stroke-dasharray:6 4; }
+.plan-room.outdoor { fill:#eff8e9; fill-opacity:.42; stroke:#659d69; stroke-dasharray:7 4; }
+.plan-label { font:600 13px Manrope,Arial; fill:#233b4a; text-anchor:middle; dominant-baseline:middle; pointer-events:none; }
+.block-label { font:700 14px Manrope,Arial; fill:#285c85; text-anchor:middle; letter-spacing:1px; pointer-events:none; }
+.checkpoint-dot { cursor:pointer; }
+.checkpoint-dot circle { fill:#153f5d; stroke:#fff; stroke-width:3; filter:drop-shadow(0 1px 2px #12394c99); opacity:0; transition:opacity .12s ease; }
+.checkpoint-dot text { font:700 10px 'DM Mono',monospace; fill:#fff; text-anchor:middle; pointer-events:none; opacity:0; transition:opacity .12s ease; }
+.checkpoint-dot:hover circle, .checkpoint-dot:hover text { opacity:1; }
+.checkpoint-dot.selected circle { fill:#0d9db0; stroke:#fff; stroke-width:5; opacity:1; }
+.checkpoint-dot.selected text { opacity:1; }
+@media(max-width:560px) { .plan-label{font-size:10px}.block-label{font-size:10px} }
